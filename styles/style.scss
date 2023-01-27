@@ -20,6 +20,7 @@
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
+    --color-grey-55: #f8f8f8;
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
@@ -27,22 +28,37 @@
 
 .light-mode {
     // --color-primary: #F5F5F5;
-    --color-primary: #E3F6FF;
+    // --color-primary: #E3F6FF;
     --color-primary: #EEEEEE;
     --color-primary: #ECECEC;
     --color-secondary: #27AE60;
     --color-secondary1: #FFEA20;
+    --color-secondary1: #2B3A55;
+    // --color-secondary1: #00005C;
     --color-secondary2: #2ECBE9;
+    --color-secondary2: #301E67;
+    --color-secondary2: #FF0032;
+    --color-secondary2: #FF7000;
+    --color-secondary2: #FB2576;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
+    --color-grey-2: #454e56;
     --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
+    --color-grey-4: #6c7983;
     --color-grey-5: #f8f8f8;
     --color-grey-6: #12181b;
 
+    .social-btn {
+
+        .social-icon {
+
+            i {
+                color: var(--color-grey-5);
+            }
+        }
+    }
 }
 
 body {
@@ -61,7 +77,7 @@ a {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -175,7 +191,7 @@ section {
 
         i {
             font-size: 1.2rem;
-            color: var(--color-grey-2);
+            color: var(--color-grey-55);
             pointer-events: none; // it means it does not do anything on mouse click
             transition: all .4s ease-in-out;
         }
@@ -217,7 +233,7 @@ section {
 
     i {
         font-size: 1.3rem;
-        color: var(--color-grey-2);
+        color: var(--color-grey-55);
         pointer-events: none;
     }
 }
@@ -227,7 +243,7 @@ section {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    min-height: 100vh;
 
     .left-header {
         // border: 2px solid fuchsia;
@@ -249,7 +265,7 @@ section {
             // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
         }
 
-        .imgae {
+        .image {
             border-radius: var(--br-sm-2);
             height: 85%;
             width: 58%;
@@ -959,3 +975,8 @@ section {
         transform: translateX(-50%);
     }
 }
+
+
+
+// importing media queries
+@import './media';
