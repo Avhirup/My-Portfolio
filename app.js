@@ -49,12 +49,3 @@ function PageTransitions() {
 }
 
 PageTransitions();
-
-
-// Auto typing effect
-// var typed = new Typed(".auto-type", {
-//     strings: ["Web Developer.","Coder", "Playing", "Running"],
-//     typeSpeed: 140,
-//     backSpeed: 140,
-//     loop: true
-// })

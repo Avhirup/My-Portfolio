@@ -922,4 +922,7 @@ section {
   .controlls .control {
     margin: 0.4rem 1rem;
   }
+  .controlls .control .txt {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
